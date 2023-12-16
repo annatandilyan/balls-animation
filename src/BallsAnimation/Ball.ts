@@ -15,11 +15,6 @@ class Ball {
     private Ec: number = 0.75;
 
     /**
-     * @property isMoving - true if the ball is moving
-     */
-    public isMoving: boolean = true;
-
-    /**
      * @property vy - velocity in y direction
      * @private
      */
@@ -74,13 +69,6 @@ class Ball {
 
         this.wallCollision(height);
 
-        /** check if the ball is not moving
-           -2.51 and -2.52 are the values of the velocity when the ball is not moving
-           values are the result of experiments
-        **/
-        if (this.vy <= -2.51 && this.vy >= -2.52) {
-            this.isMoving = false;
-        }
     }
 
     /**
