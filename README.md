@@ -15,3 +15,7 @@ npm install
 npm run dev
 ```
 
+## NOTE
+
+This branch uses animation without using delta_time between requestAnimation ticks.
+To see the animation with using delta_time, please check the branch called `animation-with-dTime`.
